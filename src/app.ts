@@ -1,7 +1,8 @@
 
 
 //#region 1. Get Started with Higher Order Observables in RxJS
-
+// //basicamente un higher order observable es un observable que contiene 
+// //otro observable dentro que puede ser llamado mediante un subscribe al subscribir el primer observable
 // import { interval, fromEvent } from 'rxjs'
 // import { map } from 'rxjs/operators'
 
@@ -25,6 +26,7 @@
 // const clockObservable = clickObservable
 //   .pipe(
 //     map(click => interval(1000)),
+//     //Aqui switchAll lo que hace es un unsubscribe al observable que se estaba ejecutando antes y subscribe al nuevo
 //     switchAll()
 //   )
   
